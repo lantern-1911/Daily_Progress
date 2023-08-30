@@ -10,12 +10,12 @@ def convert_to_words(num):
         num = num % 1000
         temp = temp // 1000
         if temp >= 10 and temp <= 19:
-            words += teens[temp - 10] 
+            words += teens[temp - 10] + " " 
         elif temp >= 20:
-            words += tens[temp // 10] 
+            words += tens[temp // 10] + " "
             temp %= 10 
         if temp>=1 and temp <= 9:
-            words += ones[temp]
+            words += ones[temp] + " "
         words += " thousand"   
     if num>= 1000:  
         words += ones[num // 1000] + " thousand "  
