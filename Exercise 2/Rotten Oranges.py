@@ -20,7 +20,7 @@ def rottenOranges(grid):
         for j in range(c):
             if grid[i][j] == 1:
                 return -1
-    p = max(p, grid[i][j])
+            p = max(p, grid[i][j])
     return max(p-2,0)
 
 grid = [[2,1,1],[0,1,1],[1,0,1]]
